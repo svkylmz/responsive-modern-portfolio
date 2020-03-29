@@ -1,9 +1,13 @@
 @include mediaXl {
-
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @include mediaLg {
-    
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @include mediaMd {
@@ -58,6 +62,10 @@
         grid-template-columns: 1fr;
         justify-content: center;
     }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @include mediaSm {
@@ -82,5 +90,9 @@
             width: 150px;
             height: 150px;
         }
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
     }
 }
