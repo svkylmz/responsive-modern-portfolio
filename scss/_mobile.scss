@@ -52,6 +52,12 @@
             height: 170px;
         }
     }
+
+    .about-info {
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
 }
 
 @include mediaSm {
